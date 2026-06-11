@@ -1,0 +1,25 @@
+# Establecer el comportamiento predeterminado: todos los archivos de texto usan LF
+* text=auto eol=lf
+
+# Asegurar que los archivos específicos de Java y configuración usen LF
+*.java text eol=lf
+*.xml text eol=lf
+*.properties text eol=lf
+*.form text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.sql text eol=lf
+
+# Asegurar que los scripts de shell (si los hubiera) usen LF
+*.sh text eol=lf
+
+# Marcar archivos binarios para que Git NO intente convertir sus finales de línea
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.jar binary
+*.class binary
+*.zip binary
+*.pdf binary
