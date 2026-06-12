@@ -2,37 +2,51 @@ package coffeelog.model;
 
 public class Cafe {
     private int id;
-    private String name;
-    private String origin;
-    private String roastType;
-    private String flavorNotes;
-    private int rating;
+    private String nombre;
+    private String paisOrigen;
+    private String metodoPreparacion;
+    private int nivelTueste;
+    private int puntuacion;
+    private String notasSabor;
+    private boolean esFavorito;
 
+    // Constructor vacío
     public Cafe() {}
 
-    public Cafe(String name, String origin, String roastType, String flavorNotes, int rating) {
-        this.name = name;
-        this.origin = origin;
-        this.roastType = roastType;
-        this.flavorNotes = flavorNotes;
-        this.rating = rating;
+    // Constructor con parámetros
+    public Cafe(String nombre, String paisOrigen, String metodoPreparacion,
+                int nivelTueste, int puntuacion, String notasSabor, boolean esFavorito) {
+        this.nombre = nombre;
+        this.paisOrigen = paisOrigen;
+        this.metodoPreparacion = metodoPreparacion;
+        this.nivelTueste = nivelTueste;
+        this.puntuacion = puntuacion;
+        this.notasSabor = notasSabor;
+        this.esFavorito = esFavorito;
     }
 
+    // Getters y Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 
-    public String getNombre() { return name; }
-    public void setNombre(String name) { this.name = name; }
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
 
-    public String getOrigen() { return origin; }
-    public void setOrigen(String origin) { this.origin = origin; }
+    public String getPaisOrigen() { return paisOrigen; }
+    public void setPaisOrigen(String paisOrigen) { this.paisOrigen = paisOrigen; }
 
-    public String getTipoTueste() { return roastType; }
-    public void setTipoTueste(String roastType) { this.roastType = roastType; }
+    public String getMetodoPreparacion() { return metodoPreparacion; }
+    public void setMetodoPreparacion(String metodoPreparacion) { this.metodoPreparacion = metodoPreparacion; }
 
-    public String getNotasSabor() { return flavorNotes; }
-    public void setNotasSabor(String flavorNotes) { this.flavorNotes = flavorNotes; }
+    public int getNivelTueste() { return nivelTueste; }
+    public void setNivelTueste(int nivelTueste) { this.nivelTueste = nivelTueste; }
 
-    public int getPuntuacion() { return rating; }
-    public void setPuntuacion(int rating) { this.rating = rating; }
+    public int getPuntuacion() { return puntuacion; }
+    public void setPuntuacion(int puntuacion) { this.puntuacion = puntuacion; }
+
+    public String getNotasSabor() { return notasSabor; }
+    public void setNotasSabor(String notasSabor) { this.notasSabor = notasSabor; }
+
+    public boolean isEsFavorito() { return esFavorito; }
+    public void setEsFavorito(boolean esFavorito) { this.esFavorito = esFavorito; }
 }
