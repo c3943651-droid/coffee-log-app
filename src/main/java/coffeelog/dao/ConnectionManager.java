@@ -5,10 +5,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionManager {
-    // Datos de conexión para SQL Server en Podman
+    // 🛠️ Cambiado: Ahora apunta a tu instancia local de SQLEXPRESS y a tu base de datos
     private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=CoffeeLogDB;encrypt=true;trustServerCertificate=true";
     private static final String USER = "sa";
-    private static final String PASSWORD = "YourStrong!Passw0rd";
+    private static final String PASSWORD = "cristian2323"; // 👈 Mantiene tu clave actual
 
     private static Connection connection = null;
 
