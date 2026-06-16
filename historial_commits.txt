@@ -1,0 +1,6 @@
+* efaa537 - c3943651-droid, hace 4 días : feat: finalizacion de forms en CoffeeLogApp - aplicacion de gestion de catas de cafe
+*   e6bc6f5 - c3943651-droid, hace 5 días : Merge pull request #1 from c3943651-droid/cambios_cristian
+|\  
+| * ff34729 - Cristian Omar Jordan Perez, hace 5 días : feat: actualizar estructura de paquetes de maven y clases limpias sin errores
+|/  
+* 1f92d70 - c3943651-droid, hace 5 días : feat: estructura inicial del proyecto con arquitectura en capas
